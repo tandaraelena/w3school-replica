@@ -1,0 +1,18 @@
+doctype html
+html
+  //- - var baseUrl = 'http://localhost:3000'
+  - var baseUrl = 'https://tandaraelena.github.io/w3school-replica'  
+  
+  block cool-config
+  head
+    title=myTitle
+    meta(name="description", content=myDescription)
+    link(rel="stylesheet", href=`${baseUrl}/style.css`)
+  body
+      
+    article 
+      block awesome-content
+    include ../header/header
+
+    include ../footer/footer
+    include ../nav/nav
